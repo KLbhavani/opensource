@@ -1,0 +1,5 @@
+X = int(input())
+discount1 = 0.9 * X
+discount2 = X - 100
+result = min(discount1, discount2)
+print(int(result))
