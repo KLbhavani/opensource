@@ -1,0 +1,4 @@
+def calculate_notebooks(N):
+    return N * 10
+N = int(input())
+print(calculate_notebooks(N))
