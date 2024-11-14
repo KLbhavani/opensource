@@ -1,0 +1,7 @@
+def max_mangoes(X, Y, Z):
+    remaining_capacity = Z - Y
+    if remaining_capacity <= 0:
+        return 0
+    return remaining_capacity // X
+X, Y, Z = map(int, input().split())
+print(max_mangoes(X, Y, Z))
