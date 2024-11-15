@@ -1,0 +1,14 @@
+N = int(input())
+arr = list(map(int, input().split()))
+k = int(input())
+seen = set()
+found_pair = False
+for num in arr:
+    if k - num in seen:
+        found_pair = True
+        break
+    seen.add(num)
+if found_pair:
+    print("true")
+else:
+    print("false")
