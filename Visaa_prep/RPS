@@ -1,0 +1,21 @@
+#include <stdio.h>
+
+
+int main() {
+    char vignesh, charan;
+    scanf(" %c %c", &vignesh, &charan);
+    if (vignesh == charan) {
+        printf("NULL\n");
+    }
+    else if ((vignesh == 'R' && charan == 'S') ||
+        (vignesh == 'S' && charan == 'P') ||
+        (vignesh == 'P' && charan == 'R')) {
+        printf("Vignesh\n");
+    }
+    else {
+        printf("Charan\n");
+    }
+
+    /* Enter your code here. Read input from STDIN. Print output to STDOUT */    
+    return 0;
+}
