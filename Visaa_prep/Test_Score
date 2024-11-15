@@ -1,0 +1,13 @@
+#include <stdio.h>
+int main() {
+    int N, X, Y;
+    scanf("%d %d %d", &N, &X, &Y);
+    if (Y % X == 0 && Y / X <= N) {
+        printf("YES\n");
+    } else {
+        printf("NO\n");
+    }
+
+    /* Enter your code here. Read input from STDIN. Print output to STDOUT */    
+    return 0;
+}
