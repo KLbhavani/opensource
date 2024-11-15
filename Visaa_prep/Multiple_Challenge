@@ -1,0 +1,6 @@
+N = int(input())
+count_div_3 = N // 3
+count_div_5 = N // 5
+count_div_15 = N // 15
+result = count_div_3 + count_div_5 - count_div_15
+print(result)
