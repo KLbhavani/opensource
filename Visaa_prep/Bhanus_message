@@ -1,0 +1,10 @@
+import re
+def validate_number(msg):
+  pattern = r'^\+(\d{2}) (\d{10})$|^(\d{10})$'
+  match = re.match(pattern, msg)
+  if not match:
+    return "Incorrect"
+  number = match.group(2) if match.group(2) else match.group(3)
+  return "Correct" if sum(int(digit) for digit in number) > 0 else "Incorrect"
+msg = input().strip()
+print(validate_number(msg))
