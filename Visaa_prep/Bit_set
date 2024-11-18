@@ -1,0 +1,9 @@
+def check_bit(N, k):
+  mask = 1 << (k - 1)
+  if N & mask:
+    return "true"
+  else:
+    return "false"
+N = int(input())
+k = int(input())
+print(check_bit(N, k))
