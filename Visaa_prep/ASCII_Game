@@ -1,0 +1,3 @@
+s = input()
+toggled_string = s.swapcase()
+print(toggled_string)
